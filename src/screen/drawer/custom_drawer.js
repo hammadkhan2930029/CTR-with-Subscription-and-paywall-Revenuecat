@@ -56,20 +56,20 @@ const Custome = (props) => {
 
 
                 <View style={{ alignSelf: 'center' }}>
-                    <TouchableOpacity onPress={() => navigation.navigate('about')}>
+                    <TouchableOpacity activeOpacity={.5} onPress={() => navigation.navigate('about')}>
                         <View style={style.content} >
                             <Text style={{ fontSize: responsiveFontSize(2), color: '#000', fontWeight: '600' }}>About Us</Text>
                             <Icon name="keyboard-arrow-right" size={30} color="#ADADC9" />
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('contact')}>
+                    <TouchableOpacity activeOpacity={.5} onPress={() => navigation.navigate('contact')}>
                         <View style={style.content}>
                             <Text style={{ fontSize: responsiveFontSize(2), color: '#000', fontWeight: '600' }}>Contact Us</Text>
                             <Icon name="keyboard-arrow-right" size={30} color="#ADADC9" />
                         </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={openPlayStoreRating}>
+                    <TouchableOpacity activeOpacity={.5} onPress={openPlayStoreRating}>
                         <View style={style.content}>
 
                             <Text style={{ fontSize: responsiveFontSize(2), color: '#000', fontWeight: '600' }}>Rate App</Text>
@@ -77,7 +77,7 @@ const Custome = (props) => {
 
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={shearAppLink}>
+                    <TouchableOpacity activeOpacity={.5} onPress={shearAppLink}>
                         <View style={style.content}>
 
                             <Text style={{ fontSize: responsiveFontSize(2), color: '#000', fontWeight: '600' }}>Share App</Text>
