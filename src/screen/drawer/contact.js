@@ -9,7 +9,6 @@ import AnimatedLoader from "react-native-animated-loader";
 import LottieView from "lottie-react-native";
 import { useToast } from "react-native-toast-notifications";
 import { SocialLink } from "./socialLinks";
-import Banner from "../bottom/home/banner_Ads";
 
 let schema = object({
 
@@ -103,9 +102,7 @@ export const Contact = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <Navbar />
-            <View>
-                <Banner/>
-            </View>
+           
             <ScrollView >
                 <AnimatedLoader
                     visible={visible}

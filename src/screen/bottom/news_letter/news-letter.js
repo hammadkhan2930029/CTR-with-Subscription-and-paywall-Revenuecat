@@ -6,7 +6,6 @@ import { responsiveHeight, responsiveFontSize, responsiveScreenWidth, responsive
 import * as Animatable from 'react-native-animatable';
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { useToast } from "react-native-toast-notifications";
-import Banner from "../home/banner_Ads";
 
 const News_letter = () => {
     const navigation = useNavigation();
@@ -86,7 +85,14 @@ const News_letter = () => {
             }
         } catch (error) {
             console.error('Fetch error:', error);
-            Alert.alert('Something went wrong. Please try again later.');
+        
+            toast.show('Something went wrong. Please try again later.', {
+                type: "warning",
+                placement: "top",
+                duration: 4000,
+                offset: 30,
+                animationType: "slide-in",
+            });
         }
     };
 
@@ -163,14 +169,7 @@ const News_letter = () => {
 
 
             </Animatable.View>
-            <View>
-                <Banner/>
-            </View>
-
-
-
-
-
+           
         </SafeAreaView >
 
     )

@@ -9,7 +9,6 @@ import DatePicker from "react-native-date-picker";
 import { SelectCountry } from 'react-native-element-dropdown';
 import AnimatedLoader from "react-native-animated-loader";
 import LottieView from "lottie-react-native";
-import Banner from "../home/banner_Ads";
 
 
 
@@ -340,9 +339,7 @@ const Home = () => {
                         </View>
                     </TouchableOpacity>
                 </View>
-                <View>
-                    <Banner/>
-                </View>
+                
                
 
                 <View style={{

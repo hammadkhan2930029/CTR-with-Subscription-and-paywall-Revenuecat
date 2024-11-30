@@ -12,20 +12,25 @@ const adUnitId = __DEV__ ? TestIds.ADAPTIVE_BANNER : 'ca-app-pub-282418349429217
 const Banner = () => {
   console.log("Is development mode?", __DEV__);
 
-    
-    return (
-       
-         <BannerAd
-         unitId={adUnitId}
-         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-         requestOptions={{
-           networkExtras: {
-             collapsible: 'bottom',
-           },
-         }}
-       />
 
-    )
+  return (
+    <View>
+      <Text>
+        Hello
+      </Text>
+    </View>
+
+    //    <BannerAd
+    //    unitId={adUnitId}
+    //    size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+    //    requestOptions={{
+    //      networkExtras: {
+    //        collapsible: 'bottom',
+    //      },
+    //    }}
+    //  />
+
+  )
 }
 
 export default Banner;

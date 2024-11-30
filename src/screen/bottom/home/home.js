@@ -8,7 +8,6 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import AnimatedLoader from "react-native-animated-loader";
 import LottieView from "lottie-react-native";
 import { SelectCountry } from 'react-native-element-dropdown';
-import Banner from "./banner_Ads";
 
 
 const Home = () => {
@@ -189,10 +188,7 @@ const Home = () => {
                     </View>
                 </Animatable.View>
 
-                {/* ----------------------------Ads------------------------------------ */}
-                <View>
-                    <Banner/>
-                </View>
+               
 
                 {/* ---------------------table----------------------------- */}
 

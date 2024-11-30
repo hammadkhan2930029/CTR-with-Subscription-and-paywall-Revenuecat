@@ -3,16 +3,13 @@ import { SafeAreaView, Text, View, Animated } from 'react-native';
 import { responsiveHeight, responsiveFontSize, responsiveScreenWidth, responsiveWidth } from "react-native-responsive-dimensions";
 import * as Animatable from 'react-native-animatable';
 import Navbar from "../normal/Navbar";
-import Banner from "../bottom/home/banner_Ads";
 
 export const About = ( ) => {
     return (
         <SafeAreaView>
              
             <Navbar />
-            <View>
-                <Banner/>
-            </View>
+          
 
             <Animatable.View animation={"fadeInUpBig"} style={{ width: responsiveWidth(95), margin: 15 }}>
                 <Text style={{ fontSize: responsiveFontSize(2.5), padding: 15, color: '#000', fontWeight: '700' }}>
